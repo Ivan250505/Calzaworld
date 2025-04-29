@@ -10,12 +10,13 @@ import cors from "cors"
 
 /*asignamos a pp toda la funcionalidad para mi sever web*/
 const app=express();
-app.use(cors());
 
 
 
 /*seterar un puerto a mi web server */
 app.set("port",5000)
+app.use(cors());
+
 
 /*routes */
 app.use("/api/usuarios",usuariosRouter);
