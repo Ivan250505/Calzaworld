@@ -4,7 +4,7 @@ import { methodHTTP as proveedoresController } from "../controllers/proveedores.
 const  router = Router();
 
 /*get */
-router.get("/",proveedoresController.getProveedores)
+router.get("/",proveedoresController.getProveedores);
 router.post("/",proveedoresController.postProveedores);
 router.get("/:id_p",proveedoresController.getProveedor);
 router.delete("/:id_p",proveedoresController.deleteProveedor);

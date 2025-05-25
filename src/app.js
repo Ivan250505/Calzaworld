@@ -17,18 +17,14 @@ const app=express();
 app.set("port",5000)
 app.use(cors());
 
+app.use(express.json());
 
 /*routes */
 app.use("/api/usuarios",usuariosRouter);
-app.use(express.json());
 app.use("/api/clientes",clientesRouter);
-app.use(express.json());
 app.use("/api/productos",productosRouter);
-app.use(express.json());
 app.use("/api/proveedores",proveedoresRouter);
-app.use(express.json());
 app.use("/api/ventas",ventasRouter);
-app.use(express.json());
 
 
 /*hacemos dispobinle a mis erver app para toda la aplicación */

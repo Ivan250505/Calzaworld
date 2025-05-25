@@ -9,7 +9,6 @@ const getProveedores = async (req, res)=>{
     }
 
 }   
-
 const postProveedores = async(req,res) =>{
     try {
         const {p_id_proveedor,p_nombre_proveedor,p_apellido_proveedor,p_empresa,p_telefono,p_correo } = req.body;
@@ -56,7 +55,6 @@ const deleteProveedor= async (req, res)=>{
     }catch (error){ 
         console.error("Error 500");
     }
-
 } 
 
 export const methodHTTP ={
